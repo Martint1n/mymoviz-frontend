@@ -38,7 +38,7 @@ function Home() {
   const [newMovies, setNewMovies] = useState([]);
 
   useEffect(()=> {
-    fetch('https://mymoviz-backend-kappa-blond.vercel.app//movies')
+    fetch('https://mymoviz-backend-kappa-blond.vercel.app/movies')
       .then(response => response.json())
       .then((data) => {
         setNewMovies(data)
